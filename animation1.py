@@ -8,19 +8,19 @@ from PySide6.QtSvg import QSvgRenderer
 
 class MainWindow(QMainWindow):
     def __init__(self):
-        global pixmap
         super().__init__()
         self.title = "Анимация картинки SVG"
         self.setWindowTitle(self.title)
-    def create(self,filepath):
+
+    def create(self, filepath):
         self.label = QLabel(self)
         self.renderer = QSvgRenderer(filepath)
 
-        pixmap = self.render_svg(200, 100)
-        self.label.setPixmap(pixmap)
+        self.pixmap = self.render_svg(200, 100)
+        self.label.setPixmap(self.pixmap)
         self.label.setStyleSheet("border: 2px solid white; border-radius: 10px;")
         self.anim = QPropertyAnimation(self.label, b"pos")
-        self.anim.setStartValue(QPoint(self.width() - pixmap.width(), 0))
+        self.anim.setStartValue(QPoint(self.width() - self.pixmap.width(), 0))
         self.anim.setEndValue(QPoint(0, 0))
         self.anim.setEasingCurve(QEasingCurve.InOutQuad)
         self.anim.setDuration(2000)
@@ -32,29 +32,28 @@ class MainWindow(QMainWindow):
 
     def start_hide_animation(self):
         self.anim.setStartValue(QPoint(0, 0))
-        self.anim.setEndValue(QPoint(-pixmap.width(), 0))
+        self.anim.setEndValue(QPoint(-self.pixmap.width(), 0))
         self.anim.start()
 
     def render_svg(self, width, height):
-        pixmap = QPixmap(width, height)
-        pixmap.fill(Qt.transparent)
+        self.pixmap = QPixmap(width, height)
+        self.pixmap.fill(Qt.transparent)
 
-        painter = QPainter(pixmap)
+        painter = QPainter(self.pixmap)
         painter.setRenderHint(QPainter.Antialiasing, True)
         painter.setRenderHint(QPainter.SmoothPixmapTransform, True)
 
         self.renderer.render(painter, QRectF(0, 0, width, height))
         painter.end()
 
-        return pixmap
-
+        return self.pixmap
 
 
 app = QApplication(sys.argv)
 
 w = MainWindow()
 # w.create('images\\volna.svg')
-w.create('images\\volna_mo.svg')
+w.create('images\\volna_mo.svg', )
 w.show()
 
 sys.exit(app.exec())
