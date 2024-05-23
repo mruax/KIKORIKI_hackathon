@@ -1,27 +1,42 @@
 import sys
 
-from PySide6.QtCore import QPropertyAnimation, QPoint
-from PySide6.QtGui import QPixmap
-from PySide6.QtWidgets import QMainWindow, QApplication, QLabel
+from PySide6.QtCore import QRectF, Qt, QPropertyAnimation, QPoint
+from PySide6.QtGui import QPainter, QPixmap
+from PySide6.QtWidgets import QApplication, QLabel, QMainWindow
+from PySide6.QtSvg import QSvgRenderer
 
 class MainWindow(QMainWindow):
     def __init__(self):
-        super(MainWindow, self).__init__()
-        self.title = "Анимация картинки"
+        super().__init__()
+        self.title = "Анимация картинки SVG"
         self.setWindowTitle(self.title)
 
         self.label = QLabel(self)
-        self.pixmap = QPixmap('cat.png')
-        self.label.setPixmap(self.pixmap)
-        self.label.setStyleSheet("border: 2px solid white; border-radius: 10px;")
-        self.setCentralWidget(self.label)
-        self.resize(1000, 1000)
+        self.renderer = QSvgRenderer('volna.svg')
 
+        pixmap = self.render_svg(200, 100)
+        self.label.setPixmap(pixmap)
+        self.label.setStyleSheet("border: 2px solid white; border-radius: 10px;")
         self.anim = QPropertyAnimation(self.label, b"pos")
-        self.anim.setStartValue(QPoint(self.width() - self.pixmap.width(), 0))
+        self.anim.setStartValue(QPoint(0, self.height() - pixmap.height()))
         self.anim.setEndValue(QPoint(0, 0))
         self.anim.setDuration(2000)
         self.anim.start()
+        self.setCentralWidget(self.label)
+        self.resize(1000, 1000)
+
+    def render_svg(self, width, height):
+        pixmap = QPixmap(width, height)
+        pixmap.fill(Qt.transparent)
+
+        painter = QPainter(pixmap)
+        painter.setRenderHint(QPainter.Antialiasing, True)
+        painter.setRenderHint(QPainter.SmoothPixmapTransform, True)
+
+        self.renderer.render(painter, QRectF(0, 0, width, height))
+        painter.end()
+
+        return pixmap
 
 app = QApplication(sys.argv)
 w = MainWindow()
