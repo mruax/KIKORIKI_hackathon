@@ -5,6 +5,7 @@ from PySide6.QtGui import QPainter, QPixmap
 from PySide6.QtWidgets import QApplication, QLabel, QMainWindow
 from PySide6.QtSvg import QSvgRenderer
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         global pixmap
@@ -13,7 +14,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle(self.title)
 
         self.label = QLabel(self)
-        self.renderer = QSvgRenderer('volna.svg')
+        self.renderer = QSvgRenderer("images/volna.svg")
 
         pixmap = self.render_svg(200, 100)
         self.label.setPixmap(pixmap)

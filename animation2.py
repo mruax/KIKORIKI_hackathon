@@ -14,7 +14,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle(self.title)
 
         self.label = QLabel(self)
-        self.renderer = QSvgRenderer('volna.svg')
+        self.renderer = QSvgRenderer("images/volna.svg")
 
         pixmap = self.render_svg(200, 100)
         self.label.setPixmap(pixmap)
