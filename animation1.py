@@ -12,9 +12,9 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.title = "Анимация картинки SVG"
         self.setWindowTitle(self.title)
-
+    def create(self,filepath):
         self.label = QLabel(self)
-        self.renderer = QSvgRenderer("images/volna.svg")
+        self.renderer = QSvgRenderer(filepath)
 
         pixmap = self.render_svg(200, 100)
         self.label.setPixmap(pixmap)
@@ -49,7 +49,12 @@ class MainWindow(QMainWindow):
         return pixmap
 
 
+
 app = QApplication(sys.argv)
+
 w = MainWindow()
+# w.create('images\\volna.svg')
+w.create('images\\volna_mo.svg')
 w.show()
+
 sys.exit(app.exec())
