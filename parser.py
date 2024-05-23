@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
-from pathlib import Path
+# from pathlib import Path
 import json
 
 main_url = "https://k-telecom.org/oborudovanie/"
