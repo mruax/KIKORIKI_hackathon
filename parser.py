@@ -4,7 +4,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-from settings import main_url, json_name
+from settings import *
 
 
 from pathlib import Path
@@ -37,15 +37,20 @@ def get_items(url=main_url, page_type=0):
         popular_items_html = soup.find_all("a", class_="product-card__wrapper")
         match page_type:
             case 0:
+                json_name = json_popular_products
                 header = soup.find('h2', class_="products-slider-block__title block__title").get_text()
             case 1:
+                json_name = json_routers
                 header = soup.find('h1', class_="products-list-cat-block__title block__title").get_text()
                 popular_items_html = soup.find('ul', class_="products__list").find_all("a", class_="product-card__wrapper")
             case 2:
+                json_name = json_tv
                 header = soup.find('h1', class_="recommend-products-block__title block__title").get_text()
             case 3:
+                json_name = json_cctv
                 header = soup.find('h1', class_="page__title").get_text()
             case _:
+                json_name = "data.json"
                 header = "Товары"
 
         img_tags = soup.find_all('img', class_="product-card__img")

@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Приставка B-OptiX BO400W",
+        "description": "Мощная ТВ приставка с современными техническими характеристиками",
+        "price": "5400 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/0233b510be29ef2f2f03f4d88b259c2f6744c61220cc1d73831c47dcf91fb702-400x400.webp",
+        "source_path": "src//0233b510be29ef2f2f03f4d88b259c2f6744c61220cc1d73831c47dcf91fb702-400x400.webp"
+    },
+    {
+        "name": "Приставка Imaqliq G Box X S905W",
+        "description": "Современная телевизионная приставка с впечатляющими характеристиками",
+        "price": "4200 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/imaqliq-boxfullhd-slide.jpg",
+        "source_path": "src//imaqliq-boxfullhd-slide.jpg"
+    }
+]

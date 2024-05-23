@@ -1,2 +1,5 @@
 main_url = "https://k-telecom.org/oborudovanie/"
-json_name = "data.json"
+json_popular_products = "data_popular.json"
+json_routers = "data_routers.json"
+json_tv = "data_tv.json"
+json_cctv = "data_cctv.json"

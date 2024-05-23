@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Роутер Mesh TL-Halo H30G (домашняя система)",
+        "description": "Mesh система с площадью покрытия 260 кв. м. и скоростью до 867Мбит/с",
+        "price": "6100 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/tl-wr850n_01_normal_1614852924837c-400x400.jpg",
+        "source_path": "src//tl-wr850n_01_normal_1614852924837c-400x400.jpg"
+    },
+    {
+        "name": "Роутер TP-Link Archer AX10",
+        "description": "Роутер с зоной покрытия 100 кв. м. на скорости 1000 Мбит/с",
+        "price": "5400 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/tl-wr850n_01_normal_1614852924837c-400x400.jpg",
+        "source_path": "src//tl-wr850n_01_normal_1614852924837c-400x400.jpg"
+    },
+    {
+        "name": "Роутер Keenetic Speedster",
+        "description": "Роутер с зоной покрытия 100 кв. м. на скорости 1000 Мбит/с",
+        "price": "7500 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/3b10276eeb04c141be98959029c2be870670e84debf8cd194107551e6683fc15-400x400.webp",
+        "source_path": "src//3b10276eeb04c141be98959029c2be870670e84debf8cd194107551e6683fc15-400x400.webp"
+    },
+    {
+        "name": "Роутер Keenetic AIR",
+        "description": "Роутер с зоной покрытия 75 кв. м.",
+        "price": "5100 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/3b10276eeb04c141be98959029c2be870670e84debf8cd194107551e6683fc15-400x400.webp",
+        "source_path": "src//3b10276eeb04c141be98959029c2be870670e84debf8cd194107551e6683fc15-400x400.webp"
+    },
+    {
+        "name": "Роутер D-Link DIR-W842/RU/R1A",
+        "description": "Роутер с зоной покрытия 75 кв. м. на скорости 1000 Мбит/с",
+        "price": "4100 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/3b10276eeb04c141be98959029c2be870670e84debf8cd194107551e6683fc15-400x400.webp",
+        "source_path": "src//3b10276eeb04c141be98959029c2be870670e84debf8cd194107551e6683fc15-400x400.webp"
+    },
+    {
+        "name": "Роутер TP-Link Archer C64",
+        "description": "Двухдиапазонный роутер позволяет подключить до 15 устройств по площади покрытия 75 кв. м. на скорости 1000 Мбит/с",
+        "price": "4600 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/821113cbed4673ed92b31b8c28bf0cd17e695380ac8141ea9ce5e7b5e40dbd16.jpg-400x400.webp",
+        "source_path": "src//821113cbed4673ed92b31b8c28bf0cd17e695380ac8141ea9ce5e7b5e40dbd16.jpg-400x400.webp"
+    },
+    {
+        "name": "Роутер TP-Link EC-220-G5",
+        "description": "Двухдиапазонный гигабитный Wi‑Fi роутер с площадью покрытия 75 м кв. м. и скоростью 1000 Мбит/с",
+        "price": "4600 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/821113cbed4673ed92b31b8c28bf0cd17e695380ac8141ea9ce5e7b5e40dbd16.jpg-400x400.webp",
+        "source_path": "src//821113cbed4673ed92b31b8c28bf0cd17e695380ac8141ea9ce5e7b5e40dbd16.jpg-400x400.webp"
+    },
+    {
+        "name": "Роутер SNR-CPE-ME2-Lite",
+        "description": "Гигабитный роутер с площадью покрытия 75 м2 на скорости до 1000 Мбит/с",
+        "price": "4500 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/821113cbed4673ed92b31b8c28bf0cd17e695380ac8141ea9ce5e7b5e40dbd16.jpg-400x400.webp",
+        "source_path": "src//821113cbed4673ed92b31b8c28bf0cd17e695380ac8141ea9ce5e7b5e40dbd16.jpg-400x400.webp"
+    },
+    {
+        "name": "Роутер D-Link DIR-W806A/RU/R1A",
+        "description": "Двухдиапазонный роутер с площадью покрытия до 60 кв. м. на скорости до 733 Мбит/с",
+        "price": "3100 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/be4a8082ef0e783ffcc7b1579c093f9819bb0a3cb98b630a4cf4f9b63e3840fd.jpg-400x400.webp",
+        "source_path": "src//be4a8082ef0e783ffcc7b1579c093f9819bb0a3cb98b630a4cf4f9b63e3840fd.jpg-400x400.webp"
+    },
+    {
+        "name": "Роутер SNR-CPE-MD2",
+        "description": "Роутер оснащен 4 внешними антеннами с усилением и имеет зону покрытия до 60 кв. м. со стабильной передачей данных 867 Мбит/с",
+        "price": "3100 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/be4a8082ef0e783ffcc7b1579c093f9819bb0a3cb98b630a4cf4f9b63e3840fd.jpg-400x400.webp",
+        "source_path": "src//be4a8082ef0e783ffcc7b1579c093f9819bb0a3cb98b630a4cf4f9b63e3840fd.jpg-400x400.webp"
+    },
+    {
+        "name": "Роутер TP-Link Archer C24",
+        "description": "Двухдиапазонный роутер с площадью покрытия до 55 м2 на скорости 867 Мбит/с",
+        "price": "3000 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/be4a8082ef0e783ffcc7b1579c093f9819bb0a3cb98b630a4cf4f9b63e3840fd.jpg-400x400.webp",
+        "source_path": "src//be4a8082ef0e783ffcc7b1579c093f9819bb0a3cb98b630a4cf4f9b63e3840fd.jpg-400x400.webp"
+    },
+    {
+        "name": "Роутер SNR-CPE-W4N",
+        "description": "Роутер, созданный для двухкомнатных квартир на скорости до 300 Мбит/с",
+        "price": "2200 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/600x800-1-400x267.webp",
+        "source_path": "src//600x800-1-400x267.webp"
+    }
+]

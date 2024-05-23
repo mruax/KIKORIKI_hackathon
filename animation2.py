@@ -1,8 +1,8 @@
 import sys
 
 from PySide6.QtCore import QRectF, Qt, QPropertyAnimation, QPoint, QTimer, QEasingCurve
-from PySide6.QtGui import QPainter, QPixmap
-from PySide6.QtWidgets import QApplication, QLabel, QMainWindow
+from PySide6.QtGui import QPainter, QPixmap, QFont
+from PySide6.QtWidgets import QApplication, QLabel, QMainWindow, QVBoxLayout
 from PySide6.QtSvg import QSvgRenderer
 
 
@@ -12,6 +12,28 @@ class MainWindow(QMainWindow):
         self.title = "Анимация картинки SVG"
         self.setWindowTitle(self.title)
         self.resize(1600, 900)
+
+        self.layout = QVBoxLayout()
+
+        self.font = QFont("Comic sans", 24, QFont.Bold)
+
+        self.item_name = QLabel(self)
+        self.item_name.setText("Продукт")
+        self.item_name.setFont(self.font)
+        self.item_name.setGeometry(200, 200, 200, 400)
+        self.layout.addWidget(self.item_name)
+
+        self.setLayout(self.layout)
+
+        self.image_label2 = QLabel()
+        pixmap3 = QPixmap("images/png/logo.png")
+
+        self.image_label2.resize(pixmap3.width(), pixmap3.height())
+        self.image_label2.setPixmap(pixmap3)
+        self.image_label2.move(12, 12)
+
+        self.layout.addWidget(self.image_label2)
+
 
         self.label = QLabel(self)
         self.renderer = QSvgRenderer("images/svg/volna_mo.svg")
