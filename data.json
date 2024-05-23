@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Роутер TP-Link Archer C64",
+        "description": "Двухдиапазонный роутер позволяет подключить до 15 устройств по площади покрытия 75 кв. м. на скорости 1000 Мбит/с",
+        "price": "4600 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/f54ec70ca5a045e57b3fec2e1c02cb3d9b32b8a8e4d73abe05aae0b6148f0e04.jpg-400x400.webp"
+    },
+    {
+        "name": "Роутер Mesh TL-Halo H30G (домашняя система)",
+        "description": "Mesh система с площадью покрытия 260 кв. м. и скоростью до 867Мбит/с",
+        "price": "6100 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/793e5d0450427ff9f888eabf313e58f79a0a1600828473e97dcd501cf4d6d2fc.jpg-400x400.webp"
+    },
+    {
+        "name": "Роутер D-Link DIR-W806A/RU/R1A",
+        "description": "Двухдиапазонный роутер с площадью покрытия до 60 кв. м. на скорости до 733 Мбит/с",
+        "price": "3100 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/600x800-2-400x320.webp"
+    },
+    {
+        "name": "Камера IP OMNY BASE miniPTZ2T-2DB",
+        "description": "Идеальная камера для офиса со встроенным микрофоном и динамиком",
+        "price": "6000 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/6ce0706077a3ef8af57aea29597b3bbada0ef6859ec736a154307f3542f923f9-400x400.webp"
+    },
+    {
+        "name": "Роутер SNR-CPE-ME2-Lite",
+        "description": "Гигабитный роутер с площадью покрытия 75 м2 на скорости до 1000 Мбит/с",
+        "price": "4500 ₽",
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/57ad8ddfe9742498dcabc20ba0eb4ddda962868103e4bf3e4745843b681ae1a2.jpg-400x400.webp"
+    }
+]
