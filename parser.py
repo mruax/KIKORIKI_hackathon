@@ -20,7 +20,7 @@ def download_image(url, folder):
         print(f'Ошибка загрузки изображения: {url}')
 
 
-def get_items(url=main_url, page_type=0):  # 0 - main, 123-rtv
+def get_items(url=main_url, page_type=0):
     """
     Возвращает информацию о продуктах с разных url.
 
@@ -32,16 +32,26 @@ def get_items(url=main_url, page_type=0):  # 0 - main, 123-rtv
 
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, "html.parser")
-
-        if page_type == 1:
-            popular_items_html = soup.find('ul', class_="products__list").find_all("a", class_="product-card__wrapper")
-        else:
-            popular_items_html = soup.find_all("a", class_="product-card__wrapper")
+        popular_items_html = soup.find_all("a", class_="product-card__wrapper")
+        match page_type:
+            case 0:
+                header = soup.find('h2', class_="products-slider-block__title block__title").get_text()
+            case 1:
+                header = soup.find('h1', class_="products-list-cat-block__title block__title").get_text()
+                popular_items_html = soup.find('ul', class_="products__list").find_all("a", class_="product-card__wrapper")
+            case 2:
+                header = soup.find('h1', class_="recommend-products-block__title block__title").get_text()
+            case 3:
+                header = soup.find('h1', class_="page__title").get_text()
+            case _:
+                header = "Товары"
 
         img_tags = soup.find_all('img', class_="product-card__img")
         img_urls = [img['data-src'] for img in img_tags if 'data-src' in img.attrs]
 
         data = []
+        header = header.rstrip().lstrip()
+        print(f"{header}:")
 
         for number, item_block in enumerate(popular_items_html):
             name = item_block.find("h6", class_="product-card__title h6").get_text().rstrip("\n")
@@ -68,7 +78,6 @@ def get_items(url=main_url, page_type=0):  # 0 - main, 123-rtv
             }
             data.append(element)
 
-            print("Популярные продукты:")
             print(f"Продукт №{number + 1}")
             print(name)
             print(description)
