@@ -27,7 +27,7 @@ class MainWindow(QMainWindow):
         self.anim.start()
 
         label_ktelecom = QLabel(self)
-        pixmap = QPixmap('images/png/logo.png')
+        pixmap = QPixmap('src/600x800-1-400x267.webp')
         label_ktelecom.setPixmap(pixmap)
         label_ktelecom.resize(pixmap.width(), pixmap.height())
         label_ktelecom.move(100, 100)
