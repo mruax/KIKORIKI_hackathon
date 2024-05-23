@@ -7,6 +7,7 @@ class Window(QWidget):
         super().__init__()
         self.resize(600, 600)
         self.child = QWidget(self)
+        # self.setWindowIcon("images/logo.ico")
         self.child.setStyleSheet("background-color:red;border-radius:15px;")
         self.child.resize(100, 100)
         self.anim = QPropertyAnimation(self.child, b"pos")
