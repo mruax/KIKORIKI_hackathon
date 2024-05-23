@@ -11,7 +11,7 @@ class Window(QWidget):
         self.anim = QPropertyAnimation(self.child, b"pos")
         self.anim.setEasingCurve(QEasingCurve.OutInCubic)
         self.anim.setEndValue(QPoint(400, 400))
-        self.anim.setDuration(1500)
+        self.anim.setDuration(4500)
         self.anim.start()
 
 
