@@ -1,6 +1,7 @@
 from PySide6.QtWidgets import QApplication, QWidget
 from PySide6.QtCore import QPropertyAnimation, QPoint, QEasingCurve
 
+
 class Window(QWidget):
     def __init__(self):
         super().__init__()
@@ -15,8 +16,8 @@ class Window(QWidget):
         self.anim.start()
 
 
-if __name__ == "__main__":
-    app = QApplication([])
-    window = Window()
-    window.show()
-    app.exec()
+# if __name__ == "__main__":
+#     app = QApplication([])
+#     window = Window()
+#     window.show()
+#     app.exec()

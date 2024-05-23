@@ -5,6 +5,7 @@ from PySide6.QtGui import QPainter, QPixmap
 from PySide6.QtWidgets import QApplication, QLabel, QMainWindow
 from PySide6.QtSvg import QSvgRenderer
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -37,6 +38,7 @@ class MainWindow(QMainWindow):
         painter.end()
 
         return pixmap
+
 
 app = QApplication(sys.argv)
 w = MainWindow()

@@ -4,6 +4,7 @@ from PySide6.QtCore import QPoint, QPropertyAnimation
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import QMainWindow, QApplication, QLabel
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -22,6 +23,7 @@ class MainWindow(QMainWindow):
         self.anim.setEndValue(QPoint(self.width() - self.pixmap.width(), self.height() - self.pixmap.height()))
         self.anim.setDuration(2000)
         self.anim.start()
+
 
 app = QApplication(sys.argv)
 w = MainWindow()
