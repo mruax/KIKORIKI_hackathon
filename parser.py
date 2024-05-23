@@ -7,11 +7,11 @@ from bs4 import BeautifulSoup
 from settings import main_url, json_name
 
 
-# from pathlib import Path
+from pathlib import Path
 
 
 def download_image(url, folder):
-    filename = os.path.join(folder, url.split("/")[-1])  # add path
+    filename = os.path.join(folder, url.split("/")[-1])
     response = requests.get(url)
 
     if response.status_code == 200:
@@ -72,11 +72,15 @@ def get_items(url=main_url, page_type=0):
                 full_url = f'{main_url}/{img_url}'
             download_image(full_url, folder="src")
 
+            filename = full_url.split("/")[-1]
+            source_path = "src//" + filename
+
             element = {
                 "name": name,
                 "description": description,
                 "price": price,
-                "img_url": img_url
+                "img_url": img_url,
+                "source_path": str(source_path)
             }
             data.append(element)
 
@@ -85,6 +89,7 @@ def get_items(url=main_url, page_type=0):
             print(description)
             print(price)
             print(f"image_url={img_url}")
+            print(f"Source path={source_path}")
             print()
 
         with open(json_name, 'w', encoding="utf-8") as f:

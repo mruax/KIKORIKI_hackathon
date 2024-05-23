@@ -11,7 +11,7 @@ if __name__ == "__main__":
     get_items(url=all_products[1], page_type=2)
     get_items(url=all_products[2], page_type=3)
 
-    app = QApplication([])
-    window = Window()
-    window.show()
-    app.exec()
+    # app = QApplication([])
+    # window = Window()
+    # window.show()
+    # app.exec()

@@ -3,42 +3,49 @@
         "name": "Камера IP OMNY BASE miniPTZ2T-2DB",
         "description": "Идеальная камера для офиса со встроенным микрофоном и динамиком",
         "price": "6000 ₽",
-        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/6ce0706077a3ef8af57aea29597b3bbada0ef6859ec736a154307f3542f923f9-400x400.webp"
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/6ce0706077a3ef8af57aea29597b3bbada0ef6859ec736a154307f3542f923f9-400x400.webp",
+        "source_path": "src//6ce0706077a3ef8af57aea29597b3bbada0ef6859ec736a154307f3542f923f9-400x400.webp"
     },
     {
         "name": "Камера IP OMNY BASE MINIDOME2T-U",
         "description": "Надежное и удобное решение со встроенным микрофоном",
         "price": "6900 ₽",
-        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/7d2d360d0354f41a364fae25089aa133fefc49722552ace1735f8312257ba460-400x400.webp"
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/7d2d360d0354f41a364fae25089aa133fefc49722552ace1735f8312257ba460-400x400.webp",
+        "source_path": "src//7d2d360d0354f41a364fae25089aa133fefc49722552ace1735f8312257ba460-400x400.webp"
     },
     {
         "name": "Камера IP UNV IPC-D122-PF28",
         "description": "IP-камера с ночной съемкой и системой обнаружения движения",
         "price": "4000 ₽",
-        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/e9bf5a27f68a478af8ee5402c10849c51f1f5eeb1a501708c059944abf4ff455.jpg-400x400.webp"
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/e9bf5a27f68a478af8ee5402c10849c51f1f5eeb1a501708c059944abf4ff455.jpg-400x400.webp",
+        "source_path": "src//e9bf5a27f68a478af8ee5402c10849c51f1f5eeb1a501708c059944abf4ff455.jpg-400x400.webp"
     },
     {
         "name": "Камера IP LTV-1CNT20-F28",
         "description": "Уличная антивандальная IP видеокамера типа «шар»",
         "price": "5000 ₽",
-        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/40095_middle-400x400.jpg"
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/40095_middle-400x400.jpg",
+        "source_path": "src//40095_middle-400x400.jpg"
     },
     {
         "name": "Камера IP OMNY BASE MINIBULLET2T-U",
         "description": "Миниатюрная цилиндрическая камера для уличной эксплуатации",
         "price": "6900 ₽",
-        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/104352764-400x360.jpg"
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/104352764-400x360.jpg",
+        "source_path": "src//104352764-400x360.jpg"
     },
     {
         "name": "Камера IP UNV IPC-B122-APF28",
         "description": "Отличная камера для организации видеонаблюдения территории и объектов",
         "price": "4200 ₽",
-        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/600x800-5-400x219.webp"
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/600x800-5-400x219.webp",
+        "source_path": "src//600x800-5-400x219.webp"
     },
     {
         "name": "Камера IP LTV-1CNB20-F28",
         "description": "Цилиндрическая IP видеокамера для наблюдения за объектами",
         "price": "5000 ₽",
-        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/38cbb906e274f8ca3e940e4428ad1395.webp"
+        "img_url": "https://k-telecom.org/wp-content/uploads/2024/02/38cbb906e274f8ca3e940e4428ad1395.webp",
+        "source_path": "src//38cbb906e274f8ca3e940e4428ad1395.webp"
     }
 ]
