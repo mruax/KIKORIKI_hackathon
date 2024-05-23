@@ -1,6 +1,6 @@
 import sys
 
-from PySide6.QtCore import QRectF, Qt, QPropertyAnimation, QPoint, QTimer
+from PySide6.QtCore import QRectF, Qt, QPropertyAnimation, QPoint, QTimer, QEasingCurve
 from PySide6.QtGui import QPainter, QPixmap
 from PySide6.QtWidgets import QApplication, QLabel, QMainWindow
 from PySide6.QtSvg import QSvgRenderer
@@ -33,6 +33,7 @@ class MainWindow(QMainWindow):
         self.anim.setStartValue(QPoint(0, 0))
         self.anim.setEndValue(QPoint(0, -pixmap.width()))
         self.anim.start()
+
     def render_svg(self, width, height):
         pixmap = QPixmap(width, height)
         pixmap.fill(Qt.transparent)
