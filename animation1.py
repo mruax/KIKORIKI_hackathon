@@ -22,6 +22,7 @@ class MainWindow(QMainWindow):
         self.anim = QPropertyAnimation(self.label, b"pos")
         self.anim.setStartValue(QPoint(self.width() - pixmap.width(), 0))
         self.anim.setEndValue(QPoint(0, 0))
+        self.anim.setEasingCurve(QEasingCurve.InOutQuad)
         self.anim.setDuration(2000)
         self.anim.start()
         self.setCentralWidget(self.label)
