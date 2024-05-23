@@ -105,18 +105,6 @@ def get_all_products():
     return all_products
 
 
-def get_routers(url):
-    get_items(url, page_type=1)
-
-
-def get_televisors(url):
-    get_items(url, page_type=2)
-
-
-def get_cctv(url):
-    get_items(url, page_type=3)
-
-
 # if __name__ == "__main__":
 #     get_items()
 #     all_products = get_all_products()
