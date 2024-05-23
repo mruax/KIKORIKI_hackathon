@@ -1,20 +1,22 @@
-from PySide6.QtWidgets import QApplication, QMainWindow
-from PySide6.QtMultimedia import QMediaPlayer
-from PySide6.QtMultimediaWidgets import QVideoWidget
-from PySide6.QtCore import QUrl
+from PySide6.QtWidgets import QApplication, QWidget
+from PySide6.QtCore import QPropertyAnimation, QPoint, QEasingCurve
 
-
-class VideoWindow(QMainWindow):
+class Window(QWidget):
     def __init__(self):
         super().__init__()
-        self.player = QMediaPlayer(self)
-        self.video_widget = QVideoWidget(self)
-        self.player.setVideoOutput(self.video_widget)
-        self.setCentralWidget(self.video_widget)
-        self.player.setSource(QUrl.fromLocalFile("C:\\Users\\Адм\\Downloads\\Smoke_43___4K_res.mp4"))
-        self.player.play()
+        self.resize(600, 600)
+        self.child = QWidget(self)
+        self.child.setStyleSheet("background-color:red;border-radius:15px;")
+        self.child.resize(100, 100)
+        self.anim = QPropertyAnimation(self.child, b"pos")
+        self.anim.setEasingCurve(QEasingCurve.OutInCubic)
+        self.anim.setEndValue(QPoint(400, 400))
+        self.anim.setDuration(1500)
+        self.anim.start()
+
+
 if __name__ == "__main__":
     app = QApplication([])
-    window = VideoWindow()
+    window = Window()
     window.show()
     app.exec()
