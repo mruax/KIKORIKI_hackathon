@@ -1,5 +1,6 @@
 from parser import *
 from animation import *
+from settings import main_url, json_name
 
 if __name__ == "__main__":
     get_items()

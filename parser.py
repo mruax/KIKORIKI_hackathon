@@ -1,11 +1,13 @@
+import json
+import os
+
 import requests
 from bs4 import BeautifulSoup
-import os
-# from pathlib import Path
-import json
 
-main_url = "https://k-telecom.org/oborudovanie/"
-json_name = "data.json"
+from settings import main_url, json_name
+
+
+# from pathlib import Path
 
 
 def download_image(url, folder):
