@@ -28,7 +28,7 @@ def get_items(url=main_url, page_type=0):
 
     :param url: Адрес страницы
     :param page_type: int, 0 - популярные предложения, 1 - роутеры, 2 - телевидение, 3 - видеонаблюдение
-    :return: None
+    :return: list
     """
     response = requests.get(url)
 
@@ -99,8 +99,10 @@ def get_items(url=main_url, page_type=0):
 
         with open(json_name, 'w', encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
+            return data
     else:
         print(f"Ошибка: не удалось получить доступ к {main_url}, статус код: {response.status_code}")
+    return []
 
 
 def get_all_products():
